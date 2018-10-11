@@ -1,0 +1,27 @@
+{
+  "allowDynamicVersions" : false,
+  "project" : {
+    "package_manager" : "",
+    "namespace" : "",
+    "name" : "",
+    "version" : "",
+    "declared_licenses" : [ ],
+    "aliases" : [ ],
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "homepage_url" : "",
+    "scopes" : [ ]
+  },
+  "packages" : [ ],
+  "errors" : [ "ProjectBuildingException: 1 problem was encountered while building the effective model for org.apache.opennlp:opennlp-tools:[unknown-version]\n[FATAL] Non-resolvable parent POM for org.apache.opennlp:opennlp-tools:[unknown-version]: Could not find artifact org.apache.opennlp:opennlp:pom:1.5.1-incubating in opennlp.sf.net (http://opennlp.sourceforge.net/maven2) and 'parent.relativePath' points at wrong local POM @ line 14, column 10\n for project org.apache.opennlp:opennlp-tools:[unknown-version] at /home/boris/Projects/gh_crossminer_crossflow/other-dependencies/org.eclipse.crossmeter.opennlp/META-INF/maven/org.apache.opennlp/opennlp-tools/pom.xml", "ModelBuildingException: 1 problem was encountered while building the effective model for org.apache.opennlp:opennlp-tools:[unknown-version]\n[FATAL] Non-resolvable parent POM for org.apache.opennlp:opennlp-tools:[unknown-version]: Could not find artifact org.apache.opennlp:opennlp:pom:1.5.1-incubating in opennlp.sf.net (http://opennlp.sourceforge.net/maven2) and 'parent.relativePath' points at wrong local POM @ line 14, column 10\n" ]
+}

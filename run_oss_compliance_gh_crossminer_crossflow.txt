@@ -1,0 +1,25 @@
+
+Executing OSS Compliance checks at 2018-10-11 20:10:38
+Analysing code located at /home/boris/Projects/gh_crossminer_crossflow
+# Testing for basic information files..
+  * README file exists
+  * LICENSE file exists
+[WARNING] CODE_OF_CONDUCT file is missing.
+
+# Testing for Eclipse-specific files..
+[ERROR] NOTICE file is missing.
+[ERROR] CONTRIBUTING file is missing.
+  * LICENSE file exists
+# Executing scancode from /home/boris/Applis/scancode-toolkit-2.9.2.
+  * Writing output to scancode_gh_crossminer_crossflow.json and scancode_gh_crossminer_crossflow.html
+  * Finished processing at 
+# Executing OSS Review Toolkit from /home/boris/Repositories/gh_oss-review-toolkit.
+  * Writing output to ort_gh_crossminer_crossflow
+  * Finished processing at 
+# Executing Dependency checker from /home/boris/Applis/dependency-check.
+  * Writing output to directory dc_gh_crossminer_crossflow
+  * Finished processing at 
+Found 1 vulnerabilities in dependencies.
+
+DONE. Finished at 2018-10-11 20:10:10.
+
