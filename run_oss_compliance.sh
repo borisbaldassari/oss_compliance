@@ -3,7 +3,6 @@
 FILEIN=$1
 
 ECLIPSE_ENABLED=1
-LOG="run_oss_compliance_FILEIN.txt"
 
 # If env variables exist for these paths, use them.
 # Otherwise use defaults.
@@ -15,25 +14,36 @@ PROJ_HOME=~/Projects/$FILEIN
 
 # Checking that we have all the required binaries.
 SC_VERSION=`${SC_HOME}/scancode --version`
-if [[ $? -ne 0 ]]; then
+if [ $? -ne 0 ]; then
     echo "Cannot find scancode: ${SC_HOME}/scancode. Quitting."
     exit 4
 fi
 ORT_VERSION=`${ORT_HOME}/gradlew --version`
-if [[ $? -ne 0 ]]; then
+if [ $? -ne 0 ]; then
     echo "Cannot find ORT: ${ORT_HOME}/gradlew. Quitting."
     exit 4
 fi
 DC_VERSION=`${DC_HOME}/bin/dependency-check.sh --version`
-if [[ $? -ne 0 ]]; then
+if [ $? -ne 0 ]; then
     echo "Cannot find dependency-check.sh: ${SC_HOME}/bin/dependency-check.sh. Quitting."
     exit 4
 fi
+
+LOG="run_oss_compliance_$FILEIN.txt"
+DIROUT="results/$FILEIN"
+
+if test ! -d $DIROUT; then
+	mkdir -p $DIROUT
+fi 
+
+ls results
 
 START_TIME=`date +"%F %H:%m:%S"`
 
 echo "" | tee -a $LOG
 echo "Executing OSS Compliance checks at ${START_TIME}" | tee -a $LOG
+echo "Log file is $LOG."
+echo "Results stored in "
 echo "Analysing code located at ${PROJ_HOME}" | tee -a $LOG
 echo ""
 
@@ -94,27 +104,30 @@ echo ""
 echo "# Executing scancode from $SC_HOME." | tee -a $LOG
 echo "  * Writing output to scancode_$FILEIN.json and scancode_$FILEIN.html" | tee -a $LOG
 time ${SC_HOME}/scancode --license --package --copyright --info --email --license-diag \
-  -n4 --json-pp scancode_$FILEIN.json --html-app scancode_$FILEIN.html \
+  -n4 --json-pp $DIROUT/scancode_$FILEIN.json --html-app $DIROUT/scancode_$FILEIN.html \
   --copyrights-summary ${PROJ_HOME}
-echo "  * Finished processing at "`localtime` | tee -a $LOG
+LTIME=`localtime`
+echo "  * Finished processing at $LTIME" | tee -a $LOG
 
 echo ""
 
 echo "# Executing OSS Review Toolkit from $ORT_HOME." | tee -a $LOG
 echo "  * Writing output to ort_$FILEIN" | tee -a $LOG
 time ${ORT_HOME}/analyzer/build/install/analyzer/bin/analyzer -i ${PROJ_HOME} \
- -o ort_$FILEIN/ -f JSON -m Maven
-echo "  * Finished processing at "`localtime` | tee -a $LOG
+ -o $DIROUT/ort_$FILEIN/ -f JSON -m Maven
+LTIME=`localtime`
+echo "  * Finished processing at $LTIME" | tee -a $LOG
 
 echo ""
 
 echo "# Executing Dependency checker from $DC_HOME." | tee -a $LOG
 echo "  * Writing output to directory dc_$FILEIN" | tee -a $LOG
 time ${DC_HOME}/bin/dependency-check.sh --project "$FILEIN" --scan ${PROJ_HOME} \
- --format CSV --out dc_$FILEIN
-echo "  * Finished processing at "`localtime` | tee -a $LOG
+ --format CSV --out $DIROUT/dc_$FILEIN
+LTIME=`localtime`
+echo "  * Finished processing at $LTIME" | tee -a $LOG
 
-DC_VUL=`echo $dc_$FILEIN/dependency-check-report.csv | wc -l`
+DC_VUL=`echo $DIROUT/$dc_$FILEIN/dependency-check-report.csv | wc -l`
 let "${DC_VUL}=${DC_VUL}-1"
 echo "Found ${DC_VUL} vulnerabilities in dependencies." | tee -a $LOG
 
