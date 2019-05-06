@@ -1,0 +1,27 @@
+{
+  "allowDynamicVersions" : true,
+  "project" : {
+    "package_manager" : "Maven",
+    "namespace" : "org.eclipse.scava",
+    "name" : "org.eclipse.scava.repository.model.github.importer",
+    "version" : "1.0.0-SNAPSHOT",
+    "declared_licenses" : [ ],
+    "aliases" : [ ],
+    "vcs" : {
+      "provider" : "Git",
+      "url" : "git@github.com:crossminer/scava.git",
+      "revision" : "988f81474f7ea01c3f8bf5d481e651261855408f",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "Git",
+      "url" : "ssh://git@github.com/crossminer/scava.git",
+      "revision" : "988f81474f7ea01c3f8bf5d481e651261855408f",
+      "path" : ""
+    },
+    "homepage_url" : "",
+    "scopes" : [ ]
+  },
+  "packages" : [ ],
+  "errors" : [ ]
+}

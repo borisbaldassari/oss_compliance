@@ -1,0 +1,27 @@
+{
+  "allowDynamicVersions" : false,
+  "project" : {
+    "package_manager" : "",
+    "namespace" : "",
+    "name" : "",
+    "version" : "",
+    "declared_licenses" : [ ],
+    "aliases" : [ ],
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "homepage_url" : "",
+    "scopes" : [ ]
+  },
+  "packages" : [ ],
+  "errors" : [ "ProjectBuildingException: 1 problem was encountered while building the effective model for org.rascalmpl:rascal_eclipse:[unknown-version]\n[FATAL] Non-resolvable parent POM for org.rascalmpl:rascal_eclipse:[unknown-version]: Could not find artifact org.rascalmpl:rascal-eclipse-ide:pom:0.10.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10\n for project org.rascalmpl:rascal_eclipse:[unknown-version] at /home/boris/Projects/gh_crossminer_scava/metric-platform/releng/org.eclipse.scava.product/target/products/scava-product/macosx/cocoa/x86_64/Eclipse.app/Contents/Eclipse/plugins/rascal_eclipse_0.10.0.201809100959/META-INF/maven/org.rascalmpl/rascal_eclipse/pom.xml", "ModelBuildingException: 1 problem was encountered while building the effective model for org.rascalmpl:rascal_eclipse:[unknown-version]\n[FATAL] Non-resolvable parent POM for org.rascalmpl:rascal_eclipse:[unknown-version]: Could not find artifact org.rascalmpl:rascal-eclipse-ide:pom:0.10.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10\n" ]
+}

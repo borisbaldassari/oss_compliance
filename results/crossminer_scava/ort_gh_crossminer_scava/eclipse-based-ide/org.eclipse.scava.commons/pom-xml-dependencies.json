@@ -1,0 +1,67 @@
+{
+  "allowDynamicVersions" : true,
+  "project" : {
+    "package_manager" : "Maven",
+    "namespace" : "org.eclipse.scava",
+    "name" : "commons",
+    "version" : "0.0.1-SNAPSHOT",
+    "declared_licenses" : [ ],
+    "aliases" : [ ],
+    "vcs" : {
+      "provider" : "Git",
+      "url" : "git@github.com:crossminer/scava.git",
+      "revision" : "988f81474f7ea01c3f8bf5d481e651261855408f",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "Git",
+      "url" : "ssh://git@github.com/crossminer/scava.git",
+      "revision" : "988f81474f7ea01c3f8bf5d481e651261855408f",
+      "path" : ""
+    },
+    "homepage_url" : "",
+    "scopes" : [ {
+      "name" : "compile",
+      "delivered" : true,
+      "dependencies" : [ {
+        "namespace" : "com.google.code.gson",
+        "name" : "gson",
+        "version" : "2.8.0",
+        "dependencies" : [ ],
+        "errors" : [ ]
+      } ]
+    } ]
+  },
+  "packages" : [ {
+    "package_manager" : "Maven",
+    "namespace" : "com.google.code.gson",
+    "name" : "gson",
+    "version" : "2.8.0",
+    "declared_licenses" : [ "Apache 2.0" ],
+    "description" : "Gson JSON library",
+    "homepage_url" : "https://github.com/google/gson/gson",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar",
+      "hash" : "c4ba5371a29ac9b2ad6129b1d39ea38750043eff",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0-sources.jar",
+      "hash" : "baf95d8519fc1a11d388f8543cb40cd2bb9d66dc",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "https://github.com/google/gson.git/gson",
+      "revision" : "gson-parent-2.8.0",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/google/gson.git/gson.git",
+      "revision" : "gson-parent-2.8.0",
+      "path" : ""
+    }
+  } ],
+  "errors" : [ ]
+}

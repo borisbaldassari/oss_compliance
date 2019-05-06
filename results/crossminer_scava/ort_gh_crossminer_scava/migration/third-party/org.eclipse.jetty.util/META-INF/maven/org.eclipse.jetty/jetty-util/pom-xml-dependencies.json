@@ -1,0 +1,27 @@
+{
+  "allowDynamicVersions" : false,
+  "project" : {
+    "package_manager" : "",
+    "namespace" : "",
+    "name" : "",
+    "version" : "",
+    "declared_licenses" : [ ],
+    "aliases" : [ ],
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "homepage_url" : "",
+    "scopes" : [ ]
+  },
+  "packages" : [ ],
+  "errors" : [ "ProjectBuildingException: 1 problem was encountered while building the effective model for org.eclipse.jetty:jetty-util:[unknown-version]\n[FATAL] Non-resolvable parent POM for org.eclipse.jetty:jetty-util:[unknown-version]: Could not find artifact org.eclipse.jetty:jetty-project:pom:9.2.6.v20141205 and 'parent.relativePath' points at wrong local POM @ line 2, column 11\n for project org.eclipse.jetty:jetty-util:[unknown-version] at /home/boris/Projects/gh_crossminer_scava/migration/third-party/org.eclipse.jetty.util/META-INF/maven/org.eclipse.jetty/jetty-util/pom.xml", "ModelBuildingException: 1 problem was encountered while building the effective model for org.eclipse.jetty:jetty-util:[unknown-version]\n[FATAL] Non-resolvable parent POM for org.eclipse.jetty:jetty-util:[unknown-version]: Could not find artifact org.eclipse.jetty:jetty-project:pom:9.2.6.v20141205 and 'parent.relativePath' points at wrong local POM @ line 2, column 11\n" ]
+}

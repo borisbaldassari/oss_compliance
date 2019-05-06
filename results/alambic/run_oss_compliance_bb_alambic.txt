@@ -1,0 +1,17 @@
+
+Executing OSS Compliance checks at 2018-10-11 18:10:41
+Analysing code located at /home/boris/Projects/bb_alambic
+# Testing for basic information files..
+  * README file exists
+  * LICENSE file exists
+  * CODE_OF_CONDUCT file exists
+
+# Testing for Eclipse-specific files..
+[ERROR] NOTICE file is missing.
+[ERROR] CONTRIBUTING file is missing.
+[ERROR] LICENSE file is missing.
+# Executing scancode from /home/boris/Applis/scancode-toolkit-2.9.2.
+  * Writing output to scancode_bb_alambic.json and scancode_bb_alambic.html
+  * Finished processing at 
+# Executing OSS Review Toolkit from /home/boris/Repositories/gh_oss-review-toolkit.
+  * Writing output to ort_bb_alambic

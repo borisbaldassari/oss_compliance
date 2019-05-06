@@ -1,0 +1,27 @@
+{
+  "allowDynamicVersions" : false,
+  "project" : {
+    "package_manager" : "",
+    "namespace" : "",
+    "name" : "",
+    "version" : "",
+    "declared_licenses" : [ ],
+    "aliases" : [ ],
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "homepage_url" : "",
+    "scopes" : [ ]
+  },
+  "packages" : [ ],
+  "errors" : [ "NoRepositoryLayoutException: Cannot access file:/${basedir}/../../egit/org.eclipse.egit.repository/target/repository with type p2 using the available layout factories: Maven2RepositoryLayoutFactory", "NoRepositoryLayoutException: Unsupported repository layout p2" ]
+}

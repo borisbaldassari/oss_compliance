@@ -1,0 +1,3451 @@
+{
+  "allowDynamicVersions" : true,
+  "project" : {
+    "package_manager" : "Maven",
+    "namespace" : "org.eclipse.scava",
+    "name" : "scava-api-gateway",
+    "version" : "1.0.0",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "aliases" : [ ],
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "homepage_url" : "http://projects.spring.io/spring-boot/scava-api-gateway/",
+    "scopes" : [ {
+      "name" : "compile",
+      "delivered" : true,
+      "dependencies" : [ {
+        "namespace" : "io.jsonwebtoken",
+        "name" : "jjwt",
+        "version" : "0.7.0",
+        "dependencies" : [ ],
+        "errors" : [ ]
+      }, {
+        "namespace" : "org.springframework.boot",
+        "name" : "spring-boot-starter-security",
+        "version" : "1.5.2.RELEASE",
+        "dependencies" : [ {
+          "namespace" : "org.springframework.security",
+          "name" : "spring-security-config",
+          "version" : "4.2.2.RELEASE",
+          "dependencies" : [ {
+            "namespace" : "org.springframework.security",
+            "name" : "spring-security-core",
+            "version" : "4.2.2.RELEASE",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          } ],
+          "errors" : [ ]
+        }, {
+          "namespace" : "org.springframework.security",
+          "name" : "spring-security-web",
+          "version" : "4.2.2.RELEASE",
+          "dependencies" : [ ],
+          "errors" : [ ]
+        }, {
+          "namespace" : "org.springframework",
+          "name" : "spring-aop",
+          "version" : "4.3.7.RELEASE",
+          "dependencies" : [ ],
+          "errors" : [ ]
+        } ],
+        "errors" : [ ]
+      }, {
+        "namespace" : "org.springframework.boot",
+        "name" : "spring-boot-starter-web",
+        "version" : "1.5.2.RELEASE",
+        "dependencies" : [ {
+          "namespace" : "com.fasterxml.jackson.core",
+          "name" : "jackson-databind",
+          "version" : "2.8.7",
+          "dependencies" : [ {
+            "namespace" : "com.fasterxml.jackson.core",
+            "name" : "jackson-annotations",
+            "version" : "2.8.0",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "com.fasterxml.jackson.core",
+            "name" : "jackson-core",
+            "version" : "2.8.7",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          } ],
+          "errors" : [ ]
+        }, {
+          "namespace" : "org.hibernate",
+          "name" : "hibernate-validator",
+          "version" : "5.3.4.Final",
+          "dependencies" : [ {
+            "namespace" : "com.fasterxml",
+            "name" : "classmate",
+            "version" : "1.3.3",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "javax.validation",
+            "name" : "validation-api",
+            "version" : "1.1.0.Final",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.jboss.logging",
+            "name" : "jboss-logging",
+            "version" : "3.3.0.Final",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          } ],
+          "errors" : [ ]
+        }, {
+          "namespace" : "org.springframework.boot",
+          "name" : "spring-boot-starter-tomcat",
+          "version" : "1.5.2.RELEASE",
+          "dependencies" : [ {
+            "namespace" : "org.apache.tomcat.embed",
+            "name" : "tomcat-embed-core",
+            "version" : "8.5.11",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.apache.tomcat.embed",
+            "name" : "tomcat-embed-el",
+            "version" : "8.5.11",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.apache.tomcat.embed",
+            "name" : "tomcat-embed-websocket",
+            "version" : "8.5.11",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          } ],
+          "errors" : [ ]
+        }, {
+          "namespace" : "org.springframework.boot",
+          "name" : "spring-boot-starter",
+          "version" : "1.5.2.RELEASE",
+          "dependencies" : [ {
+            "namespace" : "org.springframework.boot",
+            "name" : "spring-boot-autoconfigure",
+            "version" : "1.5.2.RELEASE",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.springframework.boot",
+            "name" : "spring-boot-starter-logging",
+            "version" : "1.5.2.RELEASE",
+            "dependencies" : [ {
+              "namespace" : "ch.qos.logback",
+              "name" : "logback-classic",
+              "version" : "1.1.11",
+              "dependencies" : [ {
+                "namespace" : "ch.qos.logback",
+                "name" : "logback-core",
+                "version" : "1.1.11",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "org.slf4j",
+              "name" : "jcl-over-slf4j",
+              "version" : "1.7.24",
+              "dependencies" : [ ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "org.slf4j",
+              "name" : "jul-to-slf4j",
+              "version" : "1.7.24",
+              "dependencies" : [ ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "org.slf4j",
+              "name" : "log4j-over-slf4j",
+              "version" : "1.7.24",
+              "dependencies" : [ ],
+              "errors" : [ ]
+            } ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.springframework.boot",
+            "name" : "spring-boot",
+            "version" : "1.5.2.RELEASE",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.springframework",
+            "name" : "spring-core",
+            "version" : "4.3.7.RELEASE",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.yaml",
+            "name" : "snakeyaml",
+            "version" : "1.17",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          } ],
+          "errors" : [ ]
+        }, {
+          "namespace" : "org.springframework",
+          "name" : "spring-web",
+          "version" : "4.3.7.RELEASE",
+          "dependencies" : [ {
+            "namespace" : "org.springframework",
+            "name" : "spring-beans",
+            "version" : "4.3.7.RELEASE",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.springframework",
+            "name" : "spring-context",
+            "version" : "4.3.7.RELEASE",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          } ],
+          "errors" : [ ]
+        }, {
+          "namespace" : "org.springframework",
+          "name" : "spring-webmvc",
+          "version" : "4.3.7.RELEASE",
+          "dependencies" : [ {
+            "namespace" : "org.springframework",
+            "name" : "spring-expression",
+            "version" : "4.3.7.RELEASE",
+            "dependencies" : [ ],
+            "errors" : [ ]
+          } ],
+          "errors" : [ ]
+        } ],
+        "errors" : [ ]
+      }, {
+        "namespace" : "org.springframework.cloud",
+        "name" : "spring-cloud-starter-zuul",
+        "version" : "1.4.3.RELEASE",
+        "dependencies" : [ {
+          "namespace" : "org.springframework.cloud",
+          "name" : "spring-cloud-starter-netflix-zuul",
+          "version" : "1.4.3.RELEASE",
+          "dependencies" : [ {
+            "namespace" : "com.netflix.zuul",
+            "name" : "zuul-core",
+            "version" : "1.3.0",
+            "dependencies" : [ {
+              "namespace" : "com.netflix.netflix-commons",
+              "name" : "netflix-commons-util",
+              "version" : "0.1.1",
+              "dependencies" : [ ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "com.netflix.servo",
+              "name" : "servo-core",
+              "version" : "0.7.2",
+              "dependencies" : [ {
+                "namespace" : "com.google.code.findbugs",
+                "name" : "annotations",
+                "version" : "2.0.0",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "commons-io",
+              "name" : "commons-io",
+              "version" : "2.4",
+              "dependencies" : [ ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "org.slf4j",
+              "name" : "slf4j-api",
+              "version" : "1.7.24",
+              "dependencies" : [ ],
+              "errors" : [ ]
+            } ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.springframework.boot",
+            "name" : "spring-boot-starter-actuator",
+            "version" : "1.5.2.RELEASE",
+            "dependencies" : [ {
+              "namespace" : "org.springframework.boot",
+              "name" : "spring-boot-actuator",
+              "version" : "1.5.2.RELEASE",
+              "dependencies" : [ ],
+              "errors" : [ ]
+            } ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.springframework.cloud",
+            "name" : "spring-cloud-starter-netflix-archaius",
+            "version" : "1.4.3.RELEASE",
+            "dependencies" : [ {
+              "namespace" : "com.google.guava",
+              "name" : "guava",
+              "version" : "18.0",
+              "dependencies" : [ ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "com.netflix.archaius",
+              "name" : "archaius-core",
+              "version" : "0.7.4",
+              "dependencies" : [ {
+                "namespace" : "com.google.code.findbugs",
+                "name" : "jsr305",
+                "version" : "3.0.1",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "commons-configuration",
+              "name" : "commons-configuration",
+              "version" : "1.8",
+              "dependencies" : [ ],
+              "errors" : [ ]
+            } ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.springframework.cloud",
+            "name" : "spring-cloud-starter-netflix-hystrix",
+            "version" : "1.4.3.RELEASE",
+            "dependencies" : [ {
+              "namespace" : "com.netflix.hystrix",
+              "name" : "hystrix-core",
+              "version" : "1.5.12",
+              "dependencies" : [ {
+                "namespace" : "org.hdrhistogram",
+                "name" : "HdrHistogram",
+                "version" : "2.1.9",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "com.netflix.hystrix",
+              "name" : "hystrix-javanica",
+              "version" : "1.5.12",
+              "dependencies" : [ {
+                "namespace" : "org.apache.commons",
+                "name" : "commons-lang3",
+                "version" : "3.1",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              }, {
+                "namespace" : "org.aspectj",
+                "name" : "aspectjweaver",
+                "version" : "1.8.9",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              }, {
+                "namespace" : "org.ow2.asm",
+                "name" : "asm",
+                "version" : "5.0.4",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "com.netflix.hystrix",
+              "name" : "hystrix-metrics-event-stream",
+              "version" : "1.5.12",
+              "dependencies" : [ {
+                "namespace" : "com.netflix.hystrix",
+                "name" : "hystrix-serialization",
+                "version" : "1.5.12",
+                "dependencies" : [ {
+                  "namespace" : "com.fasterxml.jackson.module",
+                  "name" : "jackson-module-afterburner",
+                  "version" : "2.8.7",
+                  "dependencies" : [ ],
+                  "errors" : [ ]
+                } ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "org.springframework.cloud",
+              "name" : "spring-cloud-netflix-core",
+              "version" : "1.4.3.RELEASE",
+              "dependencies" : [ ],
+              "errors" : [ ]
+            } ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.springframework.cloud",
+            "name" : "spring-cloud-starter-netflix-ribbon",
+            "version" : "1.4.3.RELEASE",
+            "dependencies" : [ {
+              "namespace" : "com.netflix.ribbon",
+              "name" : "ribbon-core",
+              "version" : "2.2.4",
+              "dependencies" : [ {
+                "namespace" : "commons-lang",
+                "name" : "commons-lang",
+                "version" : "2.6",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "com.netflix.ribbon",
+              "name" : "ribbon-httpclient",
+              "version" : "2.2.4",
+              "dependencies" : [ {
+                "namespace" : "com.sun.jersey.contribs",
+                "name" : "jersey-apache-client4",
+                "version" : "1.19.1",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              }, {
+                "namespace" : "com.sun.jersey",
+                "name" : "jersey-client",
+                "version" : "1.19.1",
+                "dependencies" : [ {
+                  "namespace" : "com.sun.jersey",
+                  "name" : "jersey-core",
+                  "version" : "1.19.1",
+                  "dependencies" : [ {
+                    "namespace" : "javax.ws.rs",
+                    "name" : "jsr311-api",
+                    "version" : "1.1.1",
+                    "dependencies" : [ ],
+                    "errors" : [ ]
+                  } ],
+                  "errors" : [ ]
+                } ],
+                "errors" : [ ]
+              }, {
+                "namespace" : "commons-collections",
+                "name" : "commons-collections",
+                "version" : "3.2.2",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "com.netflix.ribbon",
+              "name" : "ribbon-loadbalancer",
+              "version" : "2.2.4",
+              "dependencies" : [ {
+                "namespace" : "com.netflix.netflix-commons",
+                "name" : "netflix-statistics",
+                "version" : "0.1.1",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "com.netflix.ribbon",
+              "name" : "ribbon",
+              "version" : "2.2.4",
+              "dependencies" : [ {
+                "namespace" : "com.netflix.ribbon",
+                "name" : "ribbon-transport",
+                "version" : "2.2.4",
+                "dependencies" : [ {
+                  "namespace" : "io.reactivex",
+                  "name" : "rxnetty-contexts",
+                  "version" : "0.4.9",
+                  "dependencies" : [ ],
+                  "errors" : [ ]
+                }, {
+                  "namespace" : "io.reactivex",
+                  "name" : "rxnetty-servo",
+                  "version" : "0.4.9",
+                  "dependencies" : [ ],
+                  "errors" : [ ]
+                } ],
+                "errors" : [ ]
+              }, {
+                "namespace" : "io.reactivex",
+                "name" : "rxnetty",
+                "version" : "0.4.9",
+                "dependencies" : [ {
+                  "namespace" : "io.netty",
+                  "name" : "netty-codec-http",
+                  "version" : "4.0.27.Final",
+                  "dependencies" : [ {
+                    "namespace" : "io.netty",
+                    "name" : "netty-codec",
+                    "version" : "4.0.27.Final",
+                    "dependencies" : [ ],
+                    "errors" : [ ]
+                  }, {
+                    "namespace" : "io.netty",
+                    "name" : "netty-handler",
+                    "version" : "4.0.27.Final",
+                    "dependencies" : [ ],
+                    "errors" : [ ]
+                  } ],
+                  "errors" : [ ]
+                }, {
+                  "namespace" : "io.netty",
+                  "name" : "netty-transport-native-epoll",
+                  "version" : "4.0.27.Final",
+                  "dependencies" : [ {
+                    "namespace" : "io.netty",
+                    "name" : "netty-buffer",
+                    "version" : "4.0.27.Final",
+                    "dependencies" : [ ],
+                    "errors" : [ ]
+                  }, {
+                    "namespace" : "io.netty",
+                    "name" : "netty-common",
+                    "version" : "4.0.27.Final",
+                    "dependencies" : [ ],
+                    "errors" : [ ]
+                  }, {
+                    "namespace" : "io.netty",
+                    "name" : "netty-transport",
+                    "version" : "4.0.27.Final",
+                    "dependencies" : [ ],
+                    "errors" : [ ]
+                  } ],
+                  "errors" : [ ]
+                } ],
+                "errors" : [ ]
+              }, {
+                "namespace" : "javax.inject",
+                "name" : "javax.inject",
+                "version" : "1",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "io.reactivex",
+              "name" : "rxjava",
+              "version" : "1.2.0",
+              "dependencies" : [ ],
+              "errors" : [ ]
+            } ],
+            "errors" : [ ]
+          }, {
+            "namespace" : "org.springframework.cloud",
+            "name" : "spring-cloud-starter",
+            "version" : "1.3.2.RELEASE",
+            "dependencies" : [ {
+              "namespace" : "org.springframework.cloud",
+              "name" : "spring-cloud-commons",
+              "version" : "1.3.2.RELEASE",
+              "dependencies" : [ {
+                "namespace" : "org.apache.httpcomponents",
+                "name" : "httpclient",
+                "version" : "4.5.3",
+                "dependencies" : [ {
+                  "namespace" : "commons-codec",
+                  "name" : "commons-codec",
+                  "version" : "1.10",
+                  "dependencies" : [ ],
+                  "errors" : [ ]
+                }, {
+                  "namespace" : "org.apache.httpcomponents",
+                  "name" : "httpcore",
+                  "version" : "4.4.6",
+                  "dependencies" : [ ],
+                  "errors" : [ ]
+                } ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "org.springframework.cloud",
+              "name" : "spring-cloud-context",
+              "version" : "1.3.2.RELEASE",
+              "dependencies" : [ {
+                "namespace" : "org.springframework.security",
+                "name" : "spring-security-crypto",
+                "version" : "4.2.2.RELEASE",
+                "dependencies" : [ ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            }, {
+              "namespace" : "org.springframework.security",
+              "name" : "spring-security-rsa",
+              "version" : "1.0.3.RELEASE",
+              "dependencies" : [ {
+                "namespace" : "org.bouncycastle",
+                "name" : "bcpkix-jdk15on",
+                "version" : "1.55",
+                "dependencies" : [ {
+                  "namespace" : "org.bouncycastle",
+                  "name" : "bcprov-jdk15on",
+                  "version" : "1.55",
+                  "dependencies" : [ ],
+                  "errors" : [ ]
+                } ],
+                "errors" : [ ]
+              } ],
+              "errors" : [ ]
+            } ],
+            "errors" : [ ]
+          } ],
+          "errors" : [ ]
+        } ],
+        "errors" : [ ]
+      } ]
+    } ]
+  },
+  "packages" : [ {
+    "package_manager" : "Maven",
+    "namespace" : "ch.qos.logback",
+    "name" : "logback-classic",
+    "version" : "1.1.11",
+    "declared_licenses" : [ "Eclipse Public License - v 1.0", "GNU Lesser General Public License" ],
+    "description" : "logback-classic module",
+    "homepage_url" : "http://logback.qos.ch/logback-classic",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar",
+      "hash" : "ccedfbacef4a6515d2983e3f89ed753d5d4fb665",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11-sources.jar",
+      "hash" : "02a2f78be7ef674b6486f7b5463f05f40da5e163",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "ch.qos.logback",
+    "name" : "logback-core",
+    "version" : "1.1.11",
+    "declared_licenses" : [ "Eclipse Public License - v 1.0", "GNU Lesser General Public License" ],
+    "description" : "logback-core module",
+    "homepage_url" : "http://logback.qos.ch/logback-core",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar",
+      "hash" : "88b8df40340eed549fb07e2613879bf6b006704d",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11-sources.jar",
+      "hash" : "01b6214469321068fe4d58157768e1e039479fa1",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.fasterxml.jackson.core",
+    "name" : "jackson-annotations",
+    "version" : "2.8.0",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Core annotations used for value types, used by Jackson data binding package.",
+    "homepage_url" : "http://github.com/FasterXML/jackson",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar",
+      "hash" : "45b426f7796b741035581a176744d91090e2e6fb",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0-sources.jar",
+      "hash" : "29a1a95363d497e856c0a7d682e4f7973e334068",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git@github.com:FasterXML/jackson-annotations.git",
+      "revision" : "jackson-annotations-2.8.0",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "ssh://git@github.com/FasterXML/jackson-annotations.git",
+      "revision" : "jackson-annotations-2.8.0",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.fasterxml.jackson.core",
+    "name" : "jackson-core",
+    "version" : "2.8.7",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Core Jackson abstractions, basic JSON streaming API implementation",
+    "homepage_url" : "https://github.com/FasterXML/jackson-core",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.7/jackson-core-2.8.7.jar",
+      "hash" : "8b46f39c78476fb848c81a49fa807a9e9506dddd",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.7/jackson-core-2.8.7-sources.jar",
+      "hash" : "b7aa166b68d41d9e5aabf81d5783c61f773cefc7",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git@github.com:FasterXML/jackson-core.git",
+      "revision" : "jackson-core-2.8.7",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "ssh://git@github.com/FasterXML/jackson-core.git",
+      "revision" : "jackson-core-2.8.7",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.fasterxml.jackson.core",
+    "name" : "jackson-databind",
+    "version" : "2.8.7",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "General data-binding functionality for Jackson: works on core streaming API",
+    "homepage_url" : "http://github.com/FasterXML/jackson",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.7/jackson-databind-2.8.7.jar",
+      "hash" : "6c3257ef458ac58a8da69a6dca3d2a15286d88c8",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.7/jackson-databind-2.8.7-sources.jar",
+      "hash" : "1c4ce0c6d76f9fef808cc3c7b602219799a73d70",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git@github.com:FasterXML/jackson-databind.git",
+      "revision" : "jackson-databind-2.8.7",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "ssh://git@github.com/FasterXML/jackson-databind.git",
+      "revision" : "jackson-databind-2.8.7",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.fasterxml.jackson.module",
+    "name" : "jackson-module-afterburner",
+    "version" : "2.8.7",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Jackson (https://github.com/FasterXML/jackson) extension module\nused to enhance performance using bytecode generation to replace use of Reflection for\nfield access and method calls",
+    "homepage_url" : "https://github.com/FasterXML/jackson-modules-base",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-afterburner/2.8.7/jackson-module-afterburner-2.8.7.jar",
+      "hash" : "cac38e07e705868f5ce23434918d204094fd5c07",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-afterburner/2.8.7/jackson-module-afterburner-2.8.7-sources.jar",
+      "hash" : "2b6d0f98c938ae23de4bad1aae9f529688d99785",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git@github.com:FasterXML/jackson-modules-base.git/jackson-module-afterburner",
+      "revision" : "jackson-modules-base-2.8.7",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "ssh://git@github.com/FasterXML/jackson-modules-base.git/jackson-module-afterburner",
+      "revision" : "jackson-modules-base-2.8.7",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.fasterxml",
+    "name" : "classmate",
+    "version" : "1.3.3",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Library for introspecting types with full generic information\n        including resolving of field and method types.",
+    "homepage_url" : "http://github.com/cowtowncoder/java-classmate",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.3.3/classmate-1.3.3.jar",
+      "hash" : "864c8e370a691e343210cc7c532fc198cee460d8",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.3.3/classmate-1.3.3-sources.jar",
+      "hash" : "959904631fc3caef02ab82c4ee31c6882b910b12",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git@github.com:cowtowncoder/java-classmate.git",
+      "revision" : "classmate-1.3.3",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "ssh://git@github.com/cowtowncoder/java-classmate.git",
+      "revision" : "classmate-1.3.3",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.google.code.findbugs",
+    "name" : "annotations",
+    "version" : "2.0.0",
+    "declared_licenses" : [ "GNU Lesser Public License" ],
+    "description" : "Annotation supports the FindBugs tool",
+    "homepage_url" : "http://findbugs.sourceforge.net/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/google/code/findbugs/annotations/2.0.0/annotations-2.0.0.jar",
+      "hash" : "d8dff1d83a79f0c0609c360f02bcd2f2fc1f1369",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "",
+      "hash" : "",
+      "hash_algorithm" : ""
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "http://findbugs.googlecode.com/svn/trunk/",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "http://findbugs.googlecode.com/svn/trunk",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.google.code.findbugs",
+    "name" : "jsr305",
+    "version" : "3.0.1",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "JSR305 Annotations for Findbugs",
+    "homepage_url" : "http://findbugs.sourceforge.net/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar",
+      "hash" : "f7be08ec23c21485b9b5a1cf1654c2ec8c58168d",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1-sources.jar",
+      "hash" : "a2926c057ca3b662b9db194c869bdbe7d3bb8aef",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "https://code.google.com/p/jsr-305/",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://code.google.com/p/jsr-305",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.google.guava",
+    "name" : "guava",
+    "version" : "18.0",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Guava is a suite of core and expanded libraries that include\n    utility classes, google's collections, io classes, and much\n    much more.\n\n    Guava has only one code dependency - javax.annotation,\n    per the JSR-305 spec.",
+    "homepage_url" : "http://code.google.com/p/guava-libraries/guava",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar",
+      "hash" : "cce0823396aa693798f8882e64213b1772032b09",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0-sources.jar",
+      "hash" : "ad97fe8faaf01a3d3faacecd58e8fa6e78a973ca",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "https://code.google.com/p/guava-libraries/guava/",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://code.google.com/p/guava-libraries/guava",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.archaius",
+    "name" : "archaius-core",
+    "version" : "0.7.4",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "archaius-core",
+    "homepage_url" : "https://github.com/Netflix/archaius",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/archaius/archaius-core/0.7.4/archaius-core-0.7.4.jar",
+      "hash" : "d6b5e5c541452248fd8565ccd0732623c81a30b5",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/archaius/archaius-core/0.7.4/archaius-core-0.7.4-sources.jar",
+      "hash" : "4ffa39ae2bd1112d790136f6915c464f006235e7",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git@github.com",
+      "url" : "Netflix/archaius.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git@github.com",
+      "url" : "file:///home/boris/Projects/cb_castalia/projects/oss_compliance/Netflix/archaius.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.hystrix",
+    "name" : "hystrix-core",
+    "version" : "1.5.12",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "hystrix-core",
+    "homepage_url" : "https://github.com/Netflix/Hystrix",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-core/1.5.12/hystrix-core-1.5.12.jar",
+      "hash" : "75379b6671fcaa9cec33035df684a68ec7741ca6",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-core/1.5.12/hystrix-core-1.5.12-sources.jar",
+      "hash" : "b3ad4bd44c8f77df4615ea7750aa42d22ec755ed",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.hystrix",
+    "name" : "hystrix-javanica",
+    "version" : "1.5.12",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "hystrix-javanica",
+    "homepage_url" : "https://github.com/Netflix/Hystrix",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-javanica/1.5.12/hystrix-javanica-1.5.12.jar",
+      "hash" : "5e4d888e0dba811e8ac3a9dbc8cbcc511734ace4",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-javanica/1.5.12/hystrix-javanica-1.5.12-sources.jar",
+      "hash" : "9904c19688f585a3726a5fed41d523ee726788fa",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.hystrix",
+    "name" : "hystrix-metrics-event-stream",
+    "version" : "1.5.12",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "hystrix-metrics-event-stream",
+    "homepage_url" : "https://github.com/Netflix/Hystrix",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.12/hystrix-metrics-event-stream-1.5.12.jar",
+      "hash" : "3b3beae83ab5e8c10154c9e9581d7c210276e227",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.12/hystrix-metrics-event-stream-1.5.12-sources.jar",
+      "hash" : "d546bb42a848ef6e55589c0845df8e6b0914c020",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.hystrix",
+    "name" : "hystrix-serialization",
+    "version" : "1.5.12",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "hystrix-serialization",
+    "homepage_url" : "https://github.com/Netflix/Hystrix",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-serialization/1.5.12/hystrix-serialization-1.5.12.jar",
+      "hash" : "0ef4a2758e5bc6cf42ae848d4ba3d5363e0a2b27",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-serialization/1.5.12/hystrix-serialization-1.5.12-sources.jar",
+      "hash" : "e6ce242cb0fc2bbc13a4ce6516a68ff590d0d8c2",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.netflix-commons",
+    "name" : "netflix-commons-util",
+    "version" : "0.1.1",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "netflix-commons-util developed by Netflix",
+    "homepage_url" : "https://github.com/Netflix/netflix-commons",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-commons-util/0.1.1/netflix-commons-util-0.1.1.jar",
+      "hash" : "39e67061780476f207b31465baaed84a91ff659f",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-commons-util/0.1.1/netflix-commons-util-0.1.1-sources.jar",
+      "hash" : "2a3547fdc8270169dedb48da2d8be3c5329d09c9",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git@github.com:Netflix/netflix-commons.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "ssh://git@github.com/Netflix/netflix-commons.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.netflix-commons",
+    "name" : "netflix-statistics",
+    "version" : "0.1.1",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "netflix-statistics developed by Netflix",
+    "homepage_url" : "https://github.com/Netflix/netflix-commons",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-statistics/0.1.1/netflix-statistics-0.1.1.jar",
+      "hash" : "12f6e48253f9cafa0e24d7d232ff504c52143212",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-statistics/0.1.1/netflix-statistics-0.1.1-sources.jar",
+      "hash" : "7ecc2c3a08052a6953d5e69f6f24ed730d9d0969",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git@github.com:Netflix/netflix-commons.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "ssh://git@github.com/Netflix/netflix-commons.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.ribbon",
+    "name" : "ribbon-core",
+    "version" : "2.2.4",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "ribbon-core",
+    "homepage_url" : "https://github.com/Netflix/ribbon",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-core/2.2.4/ribbon-core-2.2.4.jar",
+      "hash" : "f86e87244899fb0e5afda719aa76b5ce6b87453b",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-core/2.2.4/ribbon-core-2.2.4-sources.jar",
+      "hash" : "002c34962fce849ea517eaa8e4d01a83702aab71",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "https",
+      "url" : "//github.com/Netflix/ribbon.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "https",
+      "url" : "file:///github.com/Netflix/ribbon.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.ribbon",
+    "name" : "ribbon-httpclient",
+    "version" : "2.2.4",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "ribbon-httpclient",
+    "homepage_url" : "https://github.com/Netflix/ribbon",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-httpclient/2.2.4/ribbon-httpclient-2.2.4.jar",
+      "hash" : "7abf937cdc019e6137aecf5499e95ea213802255",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-httpclient/2.2.4/ribbon-httpclient-2.2.4-sources.jar",
+      "hash" : "ebaf2ae9b48f0176d26128fb6541233d17544bd6",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "https",
+      "url" : "//github.com/Netflix/ribbon.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "https",
+      "url" : "file:///github.com/Netflix/ribbon.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.ribbon",
+    "name" : "ribbon-loadbalancer",
+    "version" : "2.2.4",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "ribbon-loadbalancer",
+    "homepage_url" : "https://github.com/Netflix/ribbon",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-loadbalancer/2.2.4/ribbon-loadbalancer-2.2.4.jar",
+      "hash" : "2927d9956875fe0cbe8cd7d8e845b1943d08548c",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-loadbalancer/2.2.4/ribbon-loadbalancer-2.2.4-sources.jar",
+      "hash" : "ba6f1b4f499af79d40755d91fc343226c331e61d",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "https",
+      "url" : "//github.com/Netflix/ribbon.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "https",
+      "url" : "file:///github.com/Netflix/ribbon.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.ribbon",
+    "name" : "ribbon-transport",
+    "version" : "2.2.4",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "ribbon-transport",
+    "homepage_url" : "https://github.com/Netflix/ribbon",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-transport/2.2.4/ribbon-transport-2.2.4.jar",
+      "hash" : "84c8b4801225ba52a929fdca41ccc0f2177f3db4",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-transport/2.2.4/ribbon-transport-2.2.4-sources.jar",
+      "hash" : "ae0b920ba56909fa4f2c5f73fe3339114fc4a5f0",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "https",
+      "url" : "//github.com/Netflix/ribbon.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "https",
+      "url" : "file:///github.com/Netflix/ribbon.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.ribbon",
+    "name" : "ribbon",
+    "version" : "2.2.4",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "ribbon",
+    "homepage_url" : "https://github.com/Netflix/ribbon",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon/2.2.4/ribbon-2.2.4.jar",
+      "hash" : "6cd5aaa08e53e8871df633c94dc814f1c365ba5d",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon/2.2.4/ribbon-2.2.4-sources.jar",
+      "hash" : "b98fb1c6e2ffc329d805c58bc03fe361d3c1e360",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "https",
+      "url" : "//github.com/Netflix/ribbon.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "https",
+      "url" : "file:///github.com/Netflix/ribbon.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.servo",
+    "name" : "servo-core",
+    "version" : "0.7.2",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "servo-core developed by Netflix",
+    "homepage_url" : "https://github.com/Netflix/OSS-netflix-servo-release",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/servo/servo-core/0.7.2/servo-core-0.7.2.jar",
+      "hash" : "b940f73ac9ddb440b79e801c8b936228dc0cc142",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/servo/servo-core/0.7.2/servo-core-0.7.2-sources.jar",
+      "hash" : "dfeb80058bc0af51d104cd5766c14dc4fa200489",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git@github.com:Netflix/OSS-netflix-servo-release.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "ssh://git@github.com/Netflix/OSS-netflix-servo-release.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.netflix.zuul",
+    "name" : "zuul-core",
+    "version" : "1.3.0",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "zuul-core",
+    "homepage_url" : "https://github.com/Netflix/zuul",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/zuul/zuul-core/1.3.0/zuul-core-1.3.0.jar",
+      "hash" : "3974695eb1c9845a2fc575acfdea2d8d91deba1b",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/netflix/zuul/zuul-core/1.3.0/zuul-core-1.3.0-sources.jar",
+      "hash" : "f882b342fd5428421d84a6e39d7b1b7f72af75dd",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.sun.jersey.contribs",
+    "name" : "jersey-apache-client4",
+    "version" : "1.19.1",
+    "declared_licenses" : [ "CDDL 1.1", "GPL2 w/ CPE" ],
+    "description" : "Projects that provide additional functionality to jersey, like integration\n        with other projects/frameworks.",
+    "homepage_url" : "https://jersey.java.net/jersey-contribs/jersey-apache-client4/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1.jar",
+      "hash" : "e1c45701a003097ace96bed4bc8fb937e9867498",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1-sources.jar",
+      "hash" : "5f771b12dbc77579012668adcd8645518df363ab",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "https://svn.java.net/svn/jersey~svn/tags/1.19.1/jersey-contribs/jersey-apache-client4",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "https://svn.java.net/svn/jersey~svn/tags/1.19.1/jersey-contribs/jersey-apache-client4",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.sun.jersey",
+    "name" : "jersey-client",
+    "version" : "1.19.1",
+    "declared_licenses" : [ "CDDL 1.1", "GPL2 w/ CPE" ],
+    "description" : "Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)\n        production quality Reference Implementation for building\n        RESTful Web services.",
+    "homepage_url" : "https://jersey.java.net/jersey-client/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1.jar",
+      "hash" : "2df97ebd4e5c01599584c45caa3aeb563d268eef",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1-sources.jar",
+      "hash" : "17893fb3a8a30c46044c00cb29d09a363db66d16",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "https://svn.java.net/svn/jersey~svn/tags/1.19.1/jersey-client",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "https://svn.java.net/svn/jersey~svn/tags/1.19.1/jersey-client",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "com.sun.jersey",
+    "name" : "jersey-core",
+    "version" : "1.19.1",
+    "declared_licenses" : [ "CDDL 1.1", "GPL2 w/ CPE" ],
+    "description" : "Jersey is the open source (under dual CDDL+GPL license) JAX-RS (JSR 311)\n        production quality Reference Implementation for building\n        RESTful Web services.",
+    "homepage_url" : "https://jersey.java.net/jersey-core/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-core/1.19.1/jersey-core-1.19.1.jar",
+      "hash" : "04282d106f2acd5051bd9bc2935ed9a2920c9385",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-core/1.19.1/jersey-core-1.19.1-sources.jar",
+      "hash" : "fcdfd06ce047553ccc4fd59695a76f28e9ee4549",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "https://svn.java.net/svn/jersey~svn/tags/1.19.1/jersey-core",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "https://svn.java.net/svn/jersey~svn/tags/1.19.1/jersey-core",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "commons-codec",
+    "name" : "commons-codec",
+    "version" : "1.10",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "The Apache Commons Codec package contains simple encoder and decoders for\n     various formats such as Base64 and Hexadecimal.  In addition to these\n     widely used encoders and decoders, the codec package also maintains a\n     collection of phonetic encoding utilities.",
+    "homepage_url" : "http://commons.apache.org/proper/commons-codec/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar",
+      "hash" : "4b95f4897fa13f2cd904aee711aeafc0c5295cd8",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar",
+      "hash" : "11fb3d88ae7e3b757d70237064210ceb954a5a04",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "http://svn.apache.org/repos/asf/commons/proper/codec/trunk",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "http://svn.apache.org/repos/asf/commons/proper/codec/trunk",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "commons-collections",
+    "name" : "commons-collections",
+    "version" : "3.2.2",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Types that extend and augment the Java Collections Framework.",
+    "homepage_url" : "http://commons.apache.org/collections/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar",
+      "hash" : "8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar",
+      "hash" : "78c50ebda5784937ca1615fc0e1d0cb35857d572",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "http://svn.apache.org/repos/asf/commons/proper/collections/trunk",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "http://svn.apache.org/repos/asf/commons/proper/collections/trunk",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "commons-configuration",
+    "name" : "commons-configuration",
+    "version" : "1.8",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Tools to assist in the reading of configuration/preferences files in\n        various formats",
+    "homepage_url" : "http://commons.apache.org/configuration/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/commons-configuration/commons-configuration/1.8/commons-configuration-1.8.jar",
+      "hash" : "6cce40435bcd8018018f16898de01976b319941a",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/commons-configuration/commons-configuration/1.8/commons-configuration-1.8-sources.jar",
+      "hash" : "e4dbd8ad69e07fa7f28688f92d773a429143060b",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "http://svn.apache.org/repos/asf/commons/proper/configuration/trunk",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "http://svn.apache.org/repos/asf/commons/proper/configuration/trunk",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "commons-io",
+    "name" : "commons-io",
+    "version" : "2.4",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "The Commons IO library contains utility classes, stream implementations, file filters, \nfile comparators, endian transformation classes, and much more.",
+    "homepage_url" : "http://commons.apache.org/io/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar",
+      "hash" : "b1b6ea3b7e4aa4f492509a4952029cd8e48019ad",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar",
+      "hash" : "f2d8698c46d1167ff24b06a840a87d91a02db891",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "http://svn.apache.org/repos/asf/commons/proper/io/trunk",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "http://svn.apache.org/repos/asf/commons/proper/io/trunk",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "commons-lang",
+    "name" : "commons-lang",
+    "version" : "2.6",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Commons Lang, a package of Java utility classes for the\n        classes that are in java.lang's hierarchy, or are considered to be so\n        standard as to justify existence in java.lang.",
+    "homepage_url" : "http://commons.apache.org/lang/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar",
+      "hash" : "0ce1edb914c94ebc388f086c6827e8bdeec71ac2",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6-sources.jar",
+      "hash" : "67313d715fbf0ea4fd0bdb69217fb77f807a8ce5",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "http://svn.apache.org/repos/asf/commons/proper/lang/branches/LANG_2_X",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "http://svn.apache.org/repos/asf/commons/proper/lang/branches/LANG_2_X",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "io.jsonwebtoken",
+    "name" : "jjwt",
+    "version" : "0.7.0",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/",
+    "homepage_url" : "http://nexus.sonatype.org/oss-repository-hosting.html/jjwt",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0.jar",
+      "hash" : "f042fe2676bfdc2091545152e47d77e11999946d",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0-sources.jar",
+      "hash" : "b75369bdfec0a18d83643580b1b2e608f4fa3ba4",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "https://github.com/jwtk/jjwt.git",
+      "revision" : "0.7.0",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/jwtk/jjwt.git",
+      "revision" : "0.7.0",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "io.netty",
+    "name" : "netty-buffer",
+    "version" : "4.0.27.Final",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Netty is an asynchronous event-driven network application framework for\n    rapid development of maintainable high performance protocol servers and\n    clients.",
+    "homepage_url" : "http://netty.io/netty-buffer/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.0.27.Final/netty-buffer-4.0.27.Final.jar",
+      "hash" : "91d5d38fd5cfa7b507e4f82297ba2bf7f30be805",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.0.27.Final/netty-buffer-4.0.27.Final-sources.jar",
+      "hash" : "5a2de8806a3400eea821623237c84631f342e9af",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/netty/netty.git/netty-buffer",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/netty/netty.git/netty-buffer.git",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "io.netty",
+    "name" : "netty-codec-http",
+    "version" : "4.0.27.Final",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Netty is an asynchronous event-driven network application framework for\n    rapid development of maintainable high performance protocol servers and\n    clients.",
+    "homepage_url" : "http://netty.io/netty-codec-http/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.0.27.Final/netty-codec-http-4.0.27.Final.jar",
+      "hash" : "59b04b31b58942615c0035c61db1167d118ee218",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.0.27.Final/netty-codec-http-4.0.27.Final-sources.jar",
+      "hash" : "dc0098071bfc67bb4258a954f39f6cbcd800971d",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/netty/netty.git/netty-codec-http",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/netty/netty.git/netty-codec-http.git",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "io.netty",
+    "name" : "netty-codec",
+    "version" : "4.0.27.Final",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Netty is an asynchronous event-driven network application framework for\n    rapid development of maintainable high performance protocol servers and\n    clients.",
+    "homepage_url" : "http://netty.io/netty-codec/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-codec/4.0.27.Final/netty-codec-4.0.27.Final.jar",
+      "hash" : "08ed3790b480d4370d22ad1b74a79a54663619b3",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-codec/4.0.27.Final/netty-codec-4.0.27.Final-sources.jar",
+      "hash" : "cb65f1d21471f58896ae5c82955abd0e9501bfc3",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/netty/netty.git/netty-codec",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/netty/netty.git/netty-codec.git",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "io.netty",
+    "name" : "netty-common",
+    "version" : "4.0.27.Final",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Netty is an asynchronous event-driven network application framework for\n    rapid development of maintainable high performance protocol servers and\n    clients.",
+    "homepage_url" : "http://netty.io/netty-common/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-common/4.0.27.Final/netty-common-4.0.27.Final.jar",
+      "hash" : "f9adee4559928c2e75d58b33e109c17342cb0991",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-common/4.0.27.Final/netty-common-4.0.27.Final-sources.jar",
+      "hash" : "0e05626eee607aa6ab05bd9bf7e8c90e5622a699",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/netty/netty.git/netty-common",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/netty/netty.git/netty-common.git",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "io.netty",
+    "name" : "netty-handler",
+    "version" : "4.0.27.Final",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Netty is an asynchronous event-driven network application framework for\n    rapid development of maintainable high performance protocol servers and\n    clients.",
+    "homepage_url" : "http://netty.io/netty-handler/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.0.27.Final/netty-handler-4.0.27.Final.jar",
+      "hash" : "91d5c8e25150759bdfce680f318e7b3e8a493b1f",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.0.27.Final/netty-handler-4.0.27.Final-sources.jar",
+      "hash" : "83a33b2d9448f51e95d678f7dc0099d2ba552b78",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/netty/netty.git/netty-handler",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/netty/netty.git/netty-handler.git",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "io.netty",
+    "name" : "netty-transport-native-epoll",
+    "version" : "4.0.27.Final",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Netty is an asynchronous event-driven network application framework for\n    rapid development of maintainable high performance protocol servers and\n    clients.",
+    "homepage_url" : "http://netty.io/netty-transport-native-epoll/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.0.27.Final/netty-transport-native-epoll-4.0.27.Final.jar",
+      "hash" : "3da4eda5697a09c9f8e217bc6a0f265b5b5102c5",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.0.27.Final/netty-transport-native-epoll-4.0.27.Final-sources.jar",
+      "hash" : "b9a989211dc0a1b56a52a870bb3be70b1258240a",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/netty/netty.git/netty-transport-native-epoll",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/netty/netty.git/netty-transport-native-epoll.git",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "io.netty",
+    "name" : "netty-transport",
+    "version" : "4.0.27.Final",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Netty is an asynchronous event-driven network application framework for\n    rapid development of maintainable high performance protocol servers and\n    clients.",
+    "homepage_url" : "http://netty.io/netty-transport/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-transport/4.0.27.Final/netty-transport-4.0.27.Final.jar",
+      "hash" : "fc1e00d9d2815f74df6af1cf79da65d6b2d6b102",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/netty/netty-transport/4.0.27.Final/netty-transport-4.0.27.Final-sources.jar",
+      "hash" : "7e4aabc1796c596406f2f64abc148f5367c8f27f",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/netty/netty.git/netty-transport",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/netty/netty.git/netty-transport.git",
+      "revision" : "netty-4.0.27.Final",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "io.reactivex",
+    "name" : "rxjava",
+    "version" : "1.2.0",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "rxjava",
+    "homepage_url" : "https://github.com/ReactiveX/RxJava",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.2.0/rxjava-1.2.0.jar",
+      "hash" : "42bfaf64c94f3848ebf5cf1c2ea4ec9d1b3ac6c8",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.2.0/rxjava-1.2.0-sources.jar",
+      "hash" : "00ce55d19a7aae6567b44e05f90ec0d065a41524",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "io.reactivex",
+    "name" : "rxnetty-contexts",
+    "version" : "0.4.9",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "rxnetty-contexts",
+    "homepage_url" : "https://github.com/ReactiveX/RxNetty",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/reactivex/rxnetty-contexts/0.4.9/rxnetty-contexts-0.4.9.jar",
+      "hash" : "6efe17a25602a5424c18ab975aa9c28b6d6b7f56",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/reactivex/rxnetty-contexts/0.4.9/rxnetty-contexts-0.4.9-sources.jar",
+      "hash" : "3085ad53421b7c6e3bf1ab78a1c6599a6fc92c6b",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git@github.com",
+      "url" : "ReactiveX/RxNetty.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git@github.com",
+      "url" : "file:///home/boris/Projects/cb_castalia/projects/oss_compliance/ReactiveX/RxNetty.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "io.reactivex",
+    "name" : "rxnetty-servo",
+    "version" : "0.4.9",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "rxnetty-servo",
+    "homepage_url" : "https://github.com/ReactiveX/RxNetty",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/reactivex/rxnetty-servo/0.4.9/rxnetty-servo-0.4.9.jar",
+      "hash" : "b7d6d6e132686c280f16710eaa3e90719f6808f8",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/reactivex/rxnetty-servo/0.4.9/rxnetty-servo-0.4.9-sources.jar",
+      "hash" : "a024f33a03f6d1da6e4a4330db124ec7e126f38d",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git@github.com",
+      "url" : "ReactiveX/RxNetty.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git@github.com",
+      "url" : "file:///home/boris/Projects/cb_castalia/projects/oss_compliance/ReactiveX/RxNetty.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "io.reactivex",
+    "name" : "rxnetty",
+    "version" : "0.4.9",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "rxnetty",
+    "homepage_url" : "https://github.com/ReactiveX/RxNetty",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/reactivex/rxnetty/0.4.9/rxnetty-0.4.9.jar",
+      "hash" : "5aff3c9d6bb9d9066c378bb3d2a4413ed1773bcf",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/io/reactivex/rxnetty/0.4.9/rxnetty-0.4.9-sources.jar",
+      "hash" : "e994f91f231c9301e23cb1eaee8c3aaa2abf61d8",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git@github.com",
+      "url" : "ReactiveX/RxNetty.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git@github.com",
+      "url" : "file:///home/boris/Projects/cb_castalia/projects/oss_compliance/ReactiveX/RxNetty.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "javax.inject",
+    "name" : "javax.inject",
+    "version" : "1",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "The javax.inject API",
+    "homepage_url" : "http://code.google.com/p/atinject/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar",
+      "hash" : "6975da39a7040257bd51d21a231b76c915872d38",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar",
+      "hash" : "a00123f261762a7c5e0ec916a2c7c8298d29c400",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "javax.validation",
+    "name" : "validation-api",
+    "version" : "1.1.0.Final",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Bean Validation API",
+    "homepage_url" : "http://beanvalidation.org",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar",
+      "hash" : "8613ae82954779d518631e05daa73a6a954817d5",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar",
+      "hash" : "7d49b53caed9bd81d172807c3e096d24f3c57090",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/beanvalidation/beanvalidation-api.git",
+      "revision" : "1.1.0.Final",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/beanvalidation/beanvalidation-api.git",
+      "revision" : "1.1.0.Final",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "javax.ws.rs",
+    "name" : "jsr311-api",
+    "version" : "1.1.1",
+    "declared_licenses" : [ "CDDL License" ],
+    "description" : "",
+    "homepage_url" : "https://jsr311.dev.java.net",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar",
+      "hash" : "59033da2a1afd56af1ac576750a8d0b1830d59e6",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-sources.jar",
+      "hash" : "bcc4b7b569ef8bb9b82e48cf23b5aaac29a4fb4e",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.apache.commons",
+    "name" : "commons-lang3",
+    "version" : "3.1",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Commons Lang, a package of Java utility classes for the\n  classes that are in java.lang's hierarchy, or are considered to be so\n  standard as to justify existence in java.lang.",
+    "homepage_url" : "http://commons.apache.org/lang/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar",
+      "hash" : "905075e6c80f206bbe6cf1e809d2caa69f420c76",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1-sources.jar",
+      "hash" : "8d30b90ae8bda4fbac8363161c8a9b5a99e23baf",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "http://svn.apache.org/repos/asf/commons/proper/lang/trunk",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "http://svn.apache.org/repos/asf/commons/proper/lang/trunk",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.apache.httpcomponents",
+    "name" : "httpclient",
+    "version" : "4.5.3",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Apache HttpComponents Client",
+    "homepage_url" : "http://hc.apache.org/httpcomponents-client",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar",
+      "hash" : "d1577ae15f01ef5438c5afc62162457c00a34713",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar",
+      "hash" : "4969730c661fff76fa7f9d4c7c61545817f5b033",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "https://svn.apache.org/repos/asf/httpcomponents/httpclient/tags/4.5.3/httpclient",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "https://svn.apache.org/repos/asf/httpcomponents/httpclient/tags/4.5.3/httpclient",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.apache.httpcomponents",
+    "name" : "httpcore",
+    "version" : "4.4.6",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Apache HttpComponents Core (blocking I/O)",
+    "homepage_url" : "http://hc.apache.org/httpcomponents-core-ga",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar",
+      "hash" : "e3fd8ced1f52c7574af952e2e6da0df8df08eb82",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6-sources.jar",
+      "hash" : "57cc0a7af46d66754e632bddc558a913b9e66ac3",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "https://svn.apache.org/repos/asf/httpcomponents/httpcore/tags/4.4.6/httpcore",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "https://svn.apache.org/repos/asf/httpcomponents/httpcore/tags/4.4.6/httpcore",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.apache.tomcat.embed",
+    "name" : "tomcat-embed-core",
+    "version" : "8.5.11",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Core Tomcat implementation",
+    "homepage_url" : "http://tomcat.apache.org/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/8.5.11/tomcat-embed-core-8.5.11.jar",
+      "hash" : "72761f51fc7cef3ee19d4aafc7adc605df9f611f",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/8.5.11/tomcat-embed-core-8.5.11-sources.jar",
+      "hash" : "83cbe61a663259e7ef33943810ac328cfacfc67b",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.apache.tomcat.embed",
+    "name" : "tomcat-embed-el",
+    "version" : "8.5.11",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Core Tomcat implementation",
+    "homepage_url" : "http://tomcat.apache.org/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-el/8.5.11/tomcat-embed-el-8.5.11.jar",
+      "hash" : "60253815b897166903bf5ec41219c5bb15333a69",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-el/8.5.11/tomcat-embed-el-8.5.11-sources.jar",
+      "hash" : "9fced5b3e9abd64d82df145bb1985ba52cf7e040",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.apache.tomcat.embed",
+    "name" : "tomcat-embed-websocket",
+    "version" : "8.5.11",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Core Tomcat implementation",
+    "homepage_url" : "http://tomcat.apache.org/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.11/tomcat-embed-websocket-8.5.11.jar",
+      "hash" : "dfa65e7857d46630761c0571758a56f7cbd1e9ba",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.11/tomcat-embed-websocket-8.5.11-sources.jar",
+      "hash" : "d5b140d178a7ce02dc1877c9c2a97d71c8b9bc7c",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.aspectj",
+    "name" : "aspectjweaver",
+    "version" : "1.8.9",
+    "declared_licenses" : [ "Eclipse Public License - v 1.0" ],
+    "description" : "The AspectJ weaver introduces advices to java classes",
+    "homepage_url" : "http://www.aspectj.org",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar",
+      "hash" : "db28774f477f07220eac18d5ec9c4e01f48589d7",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9-sources.jar",
+      "hash" : "9a10b6740c821d03b800a6062284b4a99de4fbeb",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.bouncycastle",
+    "name" : "bcpkix-jdk15on",
+    "version" : "1.55",
+    "declared_licenses" : [ "Bouncy Castle Licence" ],
+    "description" : "The Bouncy Castle Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation. This jar contains APIs for JDK 1.5 to JDK 1.8. The APIs can be used in conjunction with a JCE/JCA provider such as the one provided with the Bouncy Castle Cryptography APIs.",
+    "homepage_url" : "http://www.bouncycastle.org/java.html",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.55/bcpkix-jdk15on-1.55.jar",
+      "hash" : "6392d8cba22b722c6570d660ca0b3921ff1bae4f",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.55/bcpkix-jdk15on-1.55-sources.jar",
+      "hash" : "8c1d7fbc921ed4b793eb1aa267e15bc210fdae78",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.bouncycastle",
+    "name" : "bcprov-jdk15on",
+    "version" : "1.55",
+    "declared_licenses" : [ "Bouncy Castle Licence" ],
+    "description" : "The Bouncy Castle Crypto package is a Java implementation of cryptographic algorithms. This jar contains JCE provider and lightweight API for the Bouncy Castle Cryptography APIs for JDK 1.5 to JDK 1.8.",
+    "homepage_url" : "http://www.bouncycastle.org/java.html",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15on/1.55/bcprov-jdk15on-1.55.jar",
+      "hash" : "935f2e57a00ec2c489cbd2ad830d4a399708f979",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15on/1.55/bcprov-jdk15on-1.55-sources.jar",
+      "hash" : "1b46f5e1efe67c17ec2b793d1d4581e4978c52ca",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.hdrhistogram",
+    "name" : "HdrHistogram",
+    "version" : "2.1.9",
+    "declared_licenses" : [ "Public Domain, per Creative Commons CC0" ],
+    "description" : "HdrHistogram supports the recording and analyzing sampled data value\n        counts across a configurable integer value range with configurable value\n        precision within the range. Value precision is expressed as the number of\n        significant digits in the value recording, and provides control over value\n        quantization behavior across the value range and the subsequent value\n        resolution at any given level.",
+    "homepage_url" : "http://hdrhistogram.github.io/HdrHistogram/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.jar",
+      "hash" : "e4631ce165eb400edecfa32e03d3f1be53dee754",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9-sources.jar",
+      "hash" : "966a6429061192e62cc346462587253a726db6b7",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/HdrHistogram/HdrHistogram.git",
+      "revision" : "HdrHistogram-2.0.2",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/HdrHistogram/HdrHistogram.git",
+      "revision" : "HdrHistogram-2.0.2",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.hibernate",
+    "name" : "hibernate-validator",
+    "version" : "5.3.4.Final",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Hibernate's Bean Validation (JSR-303) reference implementation.",
+    "homepage_url" : "http://hibernate.org/validator/hibernate-validator",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/5.3.4.Final/hibernate-validator-5.3.4.Final.jar",
+      "hash" : "2f6c8c0b646afe18e3ad205726729d3c4a85fe2e",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/5.3.4.Final/hibernate-validator-5.3.4.Final-sources.jar",
+      "hash" : "682ddc8e119408406046da3bd484d986a60fd4ee",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/hibernate/hibernate-validator.git/hibernate-validator",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/hibernate/hibernate-validator.git/hibernate-validator.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.jboss.logging",
+    "name" : "jboss-logging",
+    "version" : "3.3.0.Final",
+    "declared_licenses" : [ "Apache License, version 2.0" ],
+    "description" : "The JBoss Logging Framework",
+    "homepage_url" : "http://www.jboss.org",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar",
+      "hash" : "3616bb87707910296e2c195dc016287080bba5af",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final-sources.jar",
+      "hash" : "3625e6818158ddb4754fa2ec51299e5f57e596b4",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/jboss-logging/jboss-logging.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/jboss-logging/jboss-logging.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.ow2.asm",
+    "name" : "asm",
+    "version" : "5.0.4",
+    "declared_licenses" : [ "BSD" ],
+    "description" : "A very small and fast Java bytecode manipulation framework",
+    "homepage_url" : "http://asm.objectweb.org/asm/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar",
+      "hash" : "0da08b8cce7bbf903602a25a3a163ae252435795",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar",
+      "hash" : "112ff54474f1f04ccf1384c92e39fdc566f0bb5e",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "svn",
+      "url" : "svn://svn.forge.objectweb.org/svnroot/asm/trunk/asm",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "svn",
+      "url" : "svn://svn.forge.objectweb.org/svnroot/asm/trunk/asm",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.slf4j",
+    "name" : "jcl-over-slf4j",
+    "version" : "1.7.24",
+    "declared_licenses" : [ "MIT License" ],
+    "description" : "JCL 1.2 implemented over SLF4J",
+    "homepage_url" : "http://www.slf4j.org",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24.jar",
+      "hash" : "e6a8629079856a2aa7862c6327ccf6dd1988d7fc",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24-sources.jar",
+      "hash" : "4bdf69b0b7d3553dfe144e9d74cd256b79e5d4d4",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.slf4j",
+    "name" : "jul-to-slf4j",
+    "version" : "1.7.24",
+    "declared_licenses" : [ "MIT License" ],
+    "description" : "JUL to SLF4J bridge",
+    "homepage_url" : "http://www.slf4j.org",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24.jar",
+      "hash" : "25a2be668cb2ad1d05d76c0773df73b4b53617fd",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24-sources.jar",
+      "hash" : "a9414b56295d6d9a057d3f1adc288519a8befa9e",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.slf4j",
+    "name" : "log4j-over-slf4j",
+    "version" : "1.7.24",
+    "declared_licenses" : [ "Apache Software Licenses" ],
+    "description" : "Log4j implemented over SLF4J",
+    "homepage_url" : "http://www.slf4j.org",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24.jar",
+      "hash" : "6ab46c51a3848286a0db3ba7b22037b3834c3c44",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24-sources.jar",
+      "hash" : "d8cad1c20ba5c62d4912b3fdbea48e04fa3bd77a",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.slf4j",
+    "name" : "slf4j-api",
+    "version" : "1.7.24",
+    "declared_licenses" : [ "MIT License" ],
+    "description" : "The slf4j API",
+    "homepage_url" : "http://www.slf4j.org",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24.jar",
+      "hash" : "3f6b4bd4f8dbe8d4bea06d107a3826469b85c3e9",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24-sources.jar",
+      "hash" : "9f1cecd7c757ad5dde29453d43315228bb0a7c7e",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.boot",
+    "name" : "spring-boot-actuator",
+    "version" : "1.5.2.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Spring Boot Actuator",
+    "homepage_url" : "http://projects.spring.io/spring-boot/",
+    "binary_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-actuator/1.5.2.RELEASE/spring-boot-actuator-1.5.2.RELEASE.jar",
+      "hash" : "a477a9bcf414bce26c702872354ae60b1ed832f0",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-actuator/1.5.2.RELEASE/spring-boot-actuator-1.5.2.RELEASE-sources.jar",
+      "hash" : "6174ab43e0c62829363610b4a0f4f2f4c20217d4",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-boot.git/spring-boot-actuator",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-boot.git/spring-boot-actuator.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.boot",
+    "name" : "spring-boot-autoconfigure",
+    "version" : "1.5.2.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Spring Boot AutoConfigure",
+    "homepage_url" : "http://projects.spring.io/spring-boot/",
+    "binary_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-autoconfigure/1.5.2.RELEASE/spring-boot-autoconfigure-1.5.2.RELEASE.jar",
+      "hash" : "8a9b8c747bc2c86eefde10330cb2984541bcb9d1",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-autoconfigure/1.5.2.RELEASE/spring-boot-autoconfigure-1.5.2.RELEASE-sources.jar",
+      "hash" : "7d94a8f1c40950f3cf2cbde63601b4d3474910ed",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-boot.git/spring-boot-autoconfigure",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-boot.git/spring-boot-autoconfigure.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.boot",
+    "name" : "spring-boot-starter-actuator",
+    "version" : "1.5.2.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Starter for using Spring Boot's Actuator which provides production\n\t\tready features to help you monitor and manage your application",
+    "homepage_url" : "http://projects.spring.io/spring-boot/",
+    "binary_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-actuator/1.5.2.RELEASE/spring-boot-starter-actuator-1.5.2.RELEASE.jar",
+      "hash" : "e30a1a03f1521adbc0a6cfdb13b2f7038cafa279",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-actuator/1.5.2.RELEASE/spring-boot-starter-actuator-1.5.2.RELEASE-sources.jar",
+      "hash" : "2d13fb4be00e1d8faa492559f5e1f95c53f0d72d",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter-actuator",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter-actuator.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.boot",
+    "name" : "spring-boot-starter-logging",
+    "version" : "1.5.2.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Starter for logging using Logback. Default logging starter",
+    "homepage_url" : "http://projects.spring.io/spring-boot/",
+    "binary_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-logging/1.5.2.RELEASE/spring-boot-starter-logging-1.5.2.RELEASE.jar",
+      "hash" : "32210889e1f9bb09ac134b9f43a117ed62f0bed2",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-logging/1.5.2.RELEASE/spring-boot-starter-logging-1.5.2.RELEASE-sources.jar",
+      "hash" : "7af7495cc8f40e68856f9f482022689b2d44fae5",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter-logging",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter-logging.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.boot",
+    "name" : "spring-boot-starter-security",
+    "version" : "1.5.2.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Starter for using Spring Security",
+    "homepage_url" : "http://projects.spring.io/spring-boot/",
+    "binary_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-security/1.5.2.RELEASE/spring-boot-starter-security-1.5.2.RELEASE.jar",
+      "hash" : "9d7dcade0fd23664247d8d1ab1bb44cf7ed1edf7",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-security/1.5.2.RELEASE/spring-boot-starter-security-1.5.2.RELEASE-sources.jar",
+      "hash" : "333a244b2324a49e1dcff7c1efb2d3bd5983d974",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter-security",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter-security.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.boot",
+    "name" : "spring-boot-starter-tomcat",
+    "version" : "1.5.2.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Starter for using Tomcat as the embedded servlet container. Default\n\t\tservlet container starter used by spring-boot-starter-web",
+    "homepage_url" : "http://projects.spring.io/spring-boot/",
+    "binary_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-tomcat/1.5.2.RELEASE/spring-boot-starter-tomcat-1.5.2.RELEASE.jar",
+      "hash" : "354320ef371fc4fc126d1bb8564cd73085a48823",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-tomcat/1.5.2.RELEASE/spring-boot-starter-tomcat-1.5.2.RELEASE-sources.jar",
+      "hash" : "c6b3f89f2fac2ec3ecf948412a46c5716e8269cd",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter-tomcat",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter-tomcat.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.boot",
+    "name" : "spring-boot-starter-web",
+    "version" : "1.5.2.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Starter for building web, including RESTful, applications using Spring\n\t\tMVC. Uses Tomcat as the default embedded container",
+    "homepage_url" : "http://projects.spring.io/spring-boot/",
+    "binary_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-web/1.5.2.RELEASE/spring-boot-starter-web-1.5.2.RELEASE.jar",
+      "hash" : "27f29876980c079b46be16b759eafe92720f3338",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-web/1.5.2.RELEASE/spring-boot-starter-web-1.5.2.RELEASE-sources.jar",
+      "hash" : "0e331103de0c3ab86506ce4b3e662efe36923abc",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter-web",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter-web.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.boot",
+    "name" : "spring-boot-starter",
+    "version" : "1.5.2.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Core starter, including auto-configuration support, logging and YAML",
+    "homepage_url" : "http://projects.spring.io/spring-boot/",
+    "binary_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter/1.5.2.RELEASE/spring-boot-starter-1.5.2.RELEASE.jar",
+      "hash" : "c72938c86ed3beadb385f29bc2954c8ca3aa47ab",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter/1.5.2.RELEASE/spring-boot-starter-1.5.2.RELEASE-sources.jar",
+      "hash" : "6b70c885c792b5808d4c745e0d37244acd171fa1",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-boot.git/spring-boot-starters/spring-boot-starter.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.boot",
+    "name" : "spring-boot",
+    "version" : "1.5.2.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Spring Boot",
+    "homepage_url" : "http://projects.spring.io/spring-boot/",
+    "binary_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot/1.5.2.RELEASE/spring-boot-1.5.2.RELEASE.jar",
+      "hash" : "46bb5d8c9ab5d3ef9e158ca5906ee7d3569befc1",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "http://repo.spring.io/milestone/org/springframework/boot/spring-boot/1.5.2.RELEASE/spring-boot-1.5.2.RELEASE-sources.jar",
+      "hash" : "0e32446ad4c35599891084571b09053205f730a1",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-boot.git/spring-boot",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-boot.git/spring-boot.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.cloud",
+    "name" : "spring-cloud-commons",
+    "version" : "1.3.2.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Spring Cloud Commons",
+    "homepage_url" : "https://projects.spring.io/spring-cloud/spring-cloud-commons/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-commons/1.3.2.RELEASE/spring-cloud-commons-1.3.2.RELEASE.jar",
+      "hash" : "5de94425c1bb51f1ee73ca7e14eef88d8c020dc8",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-commons/1.3.2.RELEASE/spring-cloud-commons-1.3.2.RELEASE-sources.jar",
+      "hash" : "34e1b5068a9bdae47bf0ea61263e15567d12697a",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-cloud/spring-cloud-commons.git/spring-cloud-commons",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-cloud/spring-cloud-commons.git/spring-cloud-commons.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.cloud",
+    "name" : "spring-cloud-context",
+    "version" : "1.3.2.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Spring Cloud Context",
+    "homepage_url" : "https://projects.spring.io/spring-cloud/spring-cloud-context/",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-context/1.3.2.RELEASE/spring-cloud-context-1.3.2.RELEASE.jar",
+      "hash" : "cced0fa4277765bd99ae81faa3a9a4677fba1260",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-context/1.3.2.RELEASE/spring-cloud-context-1.3.2.RELEASE-sources.jar",
+      "hash" : "f42bbd71087232459ef4ec3d8c8c71817ec5c1cf",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-cloud/spring-cloud-commons.git/spring-cloud-context",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-cloud/spring-cloud-commons.git/spring-cloud-context.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.cloud",
+    "name" : "spring-cloud-netflix-core",
+    "version" : "1.4.3.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Spring Cloud Netflix Core",
+    "homepage_url" : "https://spring.io/spring-cloud/spring-cloud-netflix/spring-cloud-netflix-core",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-core/1.4.3.RELEASE/spring-cloud-netflix-core-1.4.3.RELEASE.jar",
+      "hash" : "3252c71eeecc588c27f09f46c37becc2a868d918",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-core/1.4.3.RELEASE/spring-cloud-netflix-core-1.4.3.RELEASE-sources.jar",
+      "hash" : "10e7bda5921a98f13b9bd3573f2ef25e69eb5001",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-cloud/spring-cloud-netflix.git/spring-cloud-netflix-core",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-cloud/spring-cloud-netflix.git/spring-cloud-netflix-core.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.cloud",
+    "name" : "spring-cloud-starter-netflix-archaius",
+    "version" : "1.4.3.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Spring Cloud Starter Netflix Archaius",
+    "homepage_url" : "https://projects.spring.io/spring-cloud",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-archaius/1.4.3.RELEASE/spring-cloud-starter-netflix-archaius-1.4.3.RELEASE.jar",
+      "hash" : "16111e66447de5429e441e66f0557ffeb20d1ee5",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-archaius/1.4.3.RELEASE/spring-cloud-starter-netflix-archaius-1.4.3.RELEASE-sources.jar",
+      "hash" : "082abe219a6823cc03e0861f204ce0880ac2133d",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-cloud/spring-cloud-netflix.git/spring-cloud-starter-netflix/spring-cloud-starter-netflix-archaius",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-cloud/spring-cloud-netflix.git/spring-cloud-starter-netflix/spring-cloud-starter-netflix-archaius.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.cloud",
+    "name" : "spring-cloud-starter-netflix-hystrix",
+    "version" : "1.4.3.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Spring Cloud Starter Netflix Hystrix",
+    "homepage_url" : "https://projects.spring.io/spring-cloud",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/1.4.3.RELEASE/spring-cloud-starter-netflix-hystrix-1.4.3.RELEASE.jar",
+      "hash" : "9a6ecf6f8d7023939f67ab2a6cc931c4bd087f82",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/1.4.3.RELEASE/spring-cloud-starter-netflix-hystrix-1.4.3.RELEASE-sources.jar",
+      "hash" : "759f5467ae3ed38ae145e36238615d75240f52da",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-cloud/spring-cloud-netflix.git/spring-cloud-starter-netflix/spring-cloud-starter-netflix-hystrix",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-cloud/spring-cloud-netflix.git/spring-cloud-starter-netflix/spring-cloud-starter-netflix-hystrix.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.cloud",
+    "name" : "spring-cloud-starter-netflix-ribbon",
+    "version" : "1.4.3.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Spring Cloud Starter Netflix Ribbon",
+    "homepage_url" : "https://projects.spring.io/spring-cloud",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/1.4.3.RELEASE/spring-cloud-starter-netflix-ribbon-1.4.3.RELEASE.jar",
+      "hash" : "dc77db7c6f99bed74c695febcaff6605fbb49fe0",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/1.4.3.RELEASE/spring-cloud-starter-netflix-ribbon-1.4.3.RELEASE-sources.jar",
+      "hash" : "4402b20942effd1820f6d9b10c70de2053ff081a",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-cloud/spring-cloud-netflix.git/spring-cloud-starter-netflix/spring-cloud-starter-netflix-ribbon",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-cloud/spring-cloud-netflix.git/spring-cloud-starter-netflix/spring-cloud-starter-netflix-ribbon.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.cloud",
+    "name" : "spring-cloud-starter-netflix-zuul",
+    "version" : "1.4.3.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Spring Cloud Starter Netflix Zuul",
+    "homepage_url" : "https://projects.spring.io/spring-cloud",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-zuul/1.4.3.RELEASE/spring-cloud-starter-netflix-zuul-1.4.3.RELEASE.jar",
+      "hash" : "27e1cd244414e3e32deaa558661e425e297bd4d5",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-zuul/1.4.3.RELEASE/spring-cloud-starter-netflix-zuul-1.4.3.RELEASE-sources.jar",
+      "hash" : "7170fbc02a1109ef52dd9af27c09a635e378f1cd",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-cloud/spring-cloud-netflix.git/spring-cloud-starter-netflix/spring-cloud-starter-netflix-zuul",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-cloud/spring-cloud-netflix.git/spring-cloud-starter-netflix/spring-cloud-starter-netflix-zuul.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.cloud",
+    "name" : "spring-cloud-starter-zuul",
+    "version" : "1.4.3.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Spring Cloud Starter Zuul (deprecated, please use spring-cloud-starter-netflix-zuul)",
+    "homepage_url" : "https://projects.spring.io/spring-cloud",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-zuul/1.4.3.RELEASE/spring-cloud-starter-zuul-1.4.3.RELEASE.jar",
+      "hash" : "ee16b8ac9ea0fec2117fc3702e190730f6837a88",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-zuul/1.4.3.RELEASE/spring-cloud-starter-zuul-1.4.3.RELEASE-sources.jar",
+      "hash" : "14981c78d35ad8625db8f86d923c5755f1dc3185",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-cloud/spring-cloud-netflix.git/spring-cloud-starter-zuul",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-cloud/spring-cloud-netflix.git/spring-cloud-starter-zuul.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.cloud",
+    "name" : "spring-cloud-starter",
+    "version" : "1.3.2.RELEASE",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "Spring Cloud Starter",
+    "homepage_url" : "https://projects.spring.io/spring-cloud",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter/1.3.2.RELEASE/spring-cloud-starter-1.3.2.RELEASE.jar",
+      "hash" : "fedb93a4a0ea9704b06a7ddc58c09af2cdce9a38",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter/1.3.2.RELEASE/spring-cloud-starter-1.3.2.RELEASE-sources.jar",
+      "hash" : "2d580ed96ebb594e32404db48e297b5770a9f699",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-cloud/spring-cloud-commons.git/spring-cloud-starter",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-cloud/spring-cloud-commons.git/spring-cloud-starter.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.security",
+    "name" : "spring-security-config",
+    "version" : "4.2.2.RELEASE",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "spring-security-config",
+    "homepage_url" : "http://spring.io/spring-security",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-config/4.2.2.RELEASE/spring-security-config-4.2.2.RELEASE.jar",
+      "hash" : "1129e18946a6af408f96e4e0c42c4313f6e191b4",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-config/4.2.2.RELEASE/spring-security-config-4.2.2.RELEASE-sources.jar",
+      "hash" : "8dae80973cf5e463a4de41b246803e8a2dcd0840",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-security",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-security.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.security",
+    "name" : "spring-security-core",
+    "version" : "4.2.2.RELEASE",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "spring-security-core",
+    "homepage_url" : "http://spring.io/spring-security",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-core/4.2.2.RELEASE/spring-security-core-4.2.2.RELEASE.jar",
+      "hash" : "b4797b71d9f7d1a4b76b5d095ac20868369a8c31",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-core/4.2.2.RELEASE/spring-security-core-4.2.2.RELEASE-sources.jar",
+      "hash" : "db841e62bdb6eb175e3c9e4e833f422bb3870e57",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-security",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-security.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.security",
+    "name" : "spring-security-crypto",
+    "version" : "4.2.2.RELEASE",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "spring-security-crypto",
+    "homepage_url" : "http://spring.io/spring-security",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-crypto/4.2.2.RELEASE/spring-security-crypto-4.2.2.RELEASE.jar",
+      "hash" : "713ae22bcef55ae21ca1967d7cb217a1efab5dbf",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-crypto/4.2.2.RELEASE/spring-security-crypto-4.2.2.RELEASE-sources.jar",
+      "hash" : "7334f577b7a827ec529ee3b6e98b0d753089f851",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-security",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-security.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.security",
+    "name" : "spring-security-rsa",
+    "version" : "1.0.3.RELEASE",
+    "declared_licenses" : [ "Apache 2.0" ],
+    "description" : "Spring Security RSA is a small utility library for RSA ciphers.\n\tIt belongs to the family of Spring Security crypto libraries that handle encoding and decoding text as\n\ta general, useful thing to be able to do.",
+    "homepage_url" : "http://github.com/spring-projects/spring-security-oauth",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-rsa/1.0.3.RELEASE/spring-security-rsa-1.0.3.RELEASE.jar",
+      "hash" : "b0b1ee770597b5de1b51e9a889dfd2dc35d251b0",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-rsa/1.0.3.RELEASE/spring-security-rsa-1.0.3.RELEASE-sources.jar",
+      "hash" : "4b529d56f5cb4ff090f06d42a0e87b7e90501d3a",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-security-rsa.git",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-security-rsa.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework.security",
+    "name" : "spring-security-web",
+    "version" : "4.2.2.RELEASE",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "spring-security-web",
+    "homepage_url" : "http://spring.io/spring-security",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-web/4.2.2.RELEASE/spring-security-web-4.2.2.RELEASE.jar",
+      "hash" : "632c66fc1c826748f64867689c6688765db593c9",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-web/4.2.2.RELEASE/spring-security-web-4.2.2.RELEASE-sources.jar",
+      "hash" : "48cac7745066407598c21739f369f6cffae475b9",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-security",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-security.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework",
+    "name" : "spring-aop",
+    "version" : "4.3.7.RELEASE",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Spring AOP",
+    "homepage_url" : "https://github.com/spring-projects/spring-framework",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.jar",
+      "hash" : "3f243d685e4a8a78a0c291445c6d85560ec4d339",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar",
+      "hash" : "05836de7a3fcc3884f46d5dfd13a241a92b831ff",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-framework",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-framework.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework",
+    "name" : "spring-beans",
+    "version" : "4.3.7.RELEASE",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Spring Beans",
+    "homepage_url" : "https://github.com/spring-projects/spring-framework",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE.jar",
+      "hash" : "2de9f59f3202965438f3a02057d6ad8274636044",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE-sources.jar",
+      "hash" : "1b08f5c49f9794a597455c280eff37acdb221d03",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-framework",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-framework.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework",
+    "name" : "spring-context",
+    "version" : "4.3.7.RELEASE",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Spring Context",
+    "homepage_url" : "https://github.com/spring-projects/spring-framework",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE.jar",
+      "hash" : "34b66b0b7910122ef95ba4fff6da9238ef80a5de",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE-sources.jar",
+      "hash" : "137e0820eaa164c5413c79700bb289f9c83d4d81",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-framework",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-framework.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework",
+    "name" : "spring-core",
+    "version" : "4.3.7.RELEASE",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Spring Core",
+    "homepage_url" : "https://github.com/spring-projects/spring-framework",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar",
+      "hash" : "54fa2db94cc7222edc90ec71354e47cd1dc07f7b",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE-sources.jar",
+      "hash" : "d6bbdf962fa3a7e654f414262ac735bb9b4847ec",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-framework",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-framework.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework",
+    "name" : "spring-expression",
+    "version" : "4.3.7.RELEASE",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Spring Expression Language (SpEL)",
+    "homepage_url" : "https://github.com/spring-projects/spring-framework",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-expression/4.3.7.RELEASE/spring-expression-4.3.7.RELEASE.jar",
+      "hash" : "5257b6486e43d8c05674323fea5b415d4da72f38",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-expression/4.3.7.RELEASE/spring-expression-4.3.7.RELEASE-sources.jar",
+      "hash" : "6a1bf2333125cafcebc68956e174db050898680b",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-framework",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-framework.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework",
+    "name" : "spring-web",
+    "version" : "4.3.7.RELEASE",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Spring Web",
+    "homepage_url" : "https://github.com/spring-projects/spring-framework",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar",
+      "hash" : "7b69fc68cdb74c1c92f72905af6995696fcb56aa",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE-sources.jar",
+      "hash" : "f94e4cdfa0cfd7df4d1279afccdccbd150bd090a",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-framework",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-framework.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.springframework",
+    "name" : "spring-webmvc",
+    "version" : "4.3.7.RELEASE",
+    "declared_licenses" : [ "The Apache Software License, Version 2.0" ],
+    "description" : "Spring Web MVC",
+    "homepage_url" : "https://github.com/spring-projects/spring-framework",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar",
+      "hash" : "d25b11a605589f176e3ecf1dcae62a991a18b377",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE-sources.jar",
+      "hash" : "be79923a59cbef5a2b2323b66c05184f5d54da64",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "git",
+      "url" : "git://github.com/spring-projects/spring-framework",
+      "revision" : "HEAD",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "git",
+      "url" : "https://github.com/spring-projects/spring-framework.git",
+      "revision" : "HEAD",
+      "path" : ""
+    }
+  }, {
+    "package_manager" : "Maven",
+    "namespace" : "org.yaml",
+    "name" : "snakeyaml",
+    "version" : "1.17",
+    "declared_licenses" : [ "Apache License, Version 2.0" ],
+    "description" : "YAML 1.1 parser and emitter for Java",
+    "homepage_url" : "http://www.snakeyaml.org",
+    "binary_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar",
+      "hash" : "7a27ea250c5130b2922b86dea63cbb1cc10a660c",
+      "hash_algorithm" : "SHA-1"
+    },
+    "source_artifact" : {
+      "url" : "https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17-sources.jar",
+      "hash" : "63577e87886c76228db9f8a2c50ea43cde5072eb",
+      "hash_algorithm" : "SHA-1"
+    },
+    "vcs" : {
+      "provider" : "hg",
+      "url" : "http://bitbucket.org/asomov/snakeyaml",
+      "revision" : "v1.17",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "hg",
+      "url" : "http://bitbucket.org/asomov/snakeyaml",
+      "revision" : "v1.17",
+      "path" : ""
+    }
+  } ],
+  "errors" : [ ]
+}

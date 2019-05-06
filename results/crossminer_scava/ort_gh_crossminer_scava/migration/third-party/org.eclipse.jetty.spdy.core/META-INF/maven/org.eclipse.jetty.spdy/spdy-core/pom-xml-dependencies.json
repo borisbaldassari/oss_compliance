@@ -1,0 +1,27 @@
+{
+  "allowDynamicVersions" : false,
+  "project" : {
+    "package_manager" : "",
+    "namespace" : "",
+    "name" : "",
+    "version" : "",
+    "declared_licenses" : [ ],
+    "aliases" : [ ],
+    "vcs" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "vcs_processed" : {
+      "provider" : "",
+      "url" : "",
+      "revision" : "",
+      "path" : ""
+    },
+    "homepage_url" : "",
+    "scopes" : [ ]
+  },
+  "packages" : [ ],
+  "errors" : [ "ProjectBuildingException: 1 problem was encountered while building the effective model for org.eclipse.jetty.spdy:spdy-core:[unknown-version]\n[FATAL] Non-resolvable parent POM for org.eclipse.jetty.spdy:spdy-core:[unknown-version]: Could not find artifact org.eclipse.jetty.spdy:spdy-parent:pom:9.2.6.v20141205 and 'parent.relativePath' points at wrong local POM @ line 3, column 13\n for project org.eclipse.jetty.spdy:spdy-core:[unknown-version] at /home/boris/Projects/gh_crossminer_scava/migration/third-party/org.eclipse.jetty.spdy.core/META-INF/maven/org.eclipse.jetty.spdy/spdy-core/pom.xml", "ModelBuildingException: 1 problem was encountered while building the effective model for org.eclipse.jetty.spdy:spdy-core:[unknown-version]\n[FATAL] Non-resolvable parent POM for org.eclipse.jetty.spdy:spdy-core:[unknown-version]: Could not find artifact org.eclipse.jetty.spdy:spdy-parent:pom:9.2.6.v20141205 and 'parent.relativePath' points at wrong local POM @ line 3, column 13\n" ]
+}
